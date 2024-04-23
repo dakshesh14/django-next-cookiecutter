@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+turbo run lint
+
+if command -v python >/dev/null 2>&1; then
+    PYTHON_EXEC="python"
+elif command -v python3 >/dev/null 2>&1; then
+    PYTHON_EXEC="python3"
+else
+    echo "Error: Python executable not found."
+    exit 1
+fi
+
+"$PYTHON_EXEC" -m pre_commit
