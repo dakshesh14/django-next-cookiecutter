@@ -1,7 +1,8 @@
 {
-  "name": "dj-next-monorepo",
+  "name": "{{cokiecutter.project_slug}}",
   "version": "0.1.1",
-  "private": true,
+  "license": "{{cookiecutter.open_source_license}}",
+  "author": "{{cookiecutter.full_name}}",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
