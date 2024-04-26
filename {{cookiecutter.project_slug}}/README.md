@@ -1,6 +1,6 @@
 # Django Next.js Monorepo with turpo
 
-This is a Django and Next.js monorepo project made using turbo.
+This is a Django and Next.js monorepo project made using turbo. This project has been bootstrapped using [django-next-cookiecutter](https://github.com/dakshesh14/django-next-cookiecutter/).
 
 ## Getting Started
 
