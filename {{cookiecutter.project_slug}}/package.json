@@ -2,7 +2,7 @@
   "name": "{{cookiecutter.project_slug}}",
   "version": "0.1.1",
   "license": "{{cookiecutter.open_source_license}}",
-  "author": "{{cookiecutter.full_name}}",
+  "author": "{{cookiecutter.author_name}}",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
