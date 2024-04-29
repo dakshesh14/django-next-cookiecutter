@@ -1,5 +1,5 @@
 {
-  "name": "{{cokiecutter.project_slug}}",
+  "name": "{{cookiecutter.project_slug}}",
   "version": "0.1.1",
   "license": "{{cookiecutter.open_source_license}}",
   "author": "{{cookiecutter.full_name}}",
