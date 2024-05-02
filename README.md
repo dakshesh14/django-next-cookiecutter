@@ -77,7 +77,7 @@ and many more...
 
 ## Future Plans
 
-- [ ] Add option to choose between /app or /pages router for Next.js
+- [x] Add option to choose between /app or /pages router for Next.js
 - [ ] Add documentation for backend and frontend on how to add more packages
 - [ ] Add docker support
 
