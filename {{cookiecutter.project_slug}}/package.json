@@ -9,7 +9,6 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "ui:add": "pnpm --filter ui ui:add",
-    "dj:main": "pnpm --filter django-main dj:main",
     "prepare": "husky install"
   },
   "devDependencies": {

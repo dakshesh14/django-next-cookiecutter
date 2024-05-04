@@ -1,12 +1,12 @@
 # ==== pytest ====
 [tool.pytest.ini_options]
 minversion = "6.0"
-addopts = "--ds=backend/main/config.settings.test --reuse-db"
+addopts = "--ds=backend/{{ cookiecutter.project_slug }}_project/config.settings.test --reuse-db"
 python_files = ["tests.py", "test_*.py"]
 
 # ==== Coverage ====
 [tool.coverage.run]
-include = ["backend/main/**"]
+include = ["backend/{{ cookiecutter.project_slug }}_project/**"]
 omit = ["*/migrations/*", "*/tests/*"]
 plugins = ["django_coverage_plugin"]
 
@@ -21,7 +21,10 @@ target-version = ['py311']
 [tool.isort]
 profile = "black"
 line_length = 119
-known_first_party = ["backend/main/{{cookiecutter.project_slug}}", "config"]
+known_first_party = [
+    "backend/{{ cookiecutter.project_slug }}_project/{{cookiecutter.project_slug}}",
+    "config",
+]
 skip = ["venv/"]
 skip_glob = ["**/migrations/*.py"]
 
@@ -42,13 +45,13 @@ module = "*.migrations.*"
 ignore_errors = true
 
 [tool.django-stubs]
-django_settings_module = "backend.main.config.settings.test"
+django_settings_module = "backend.{{ cookiecutter.project_slug }}_project.config.settings.test"
 
 
 # ==== PyLint ====
 [tool.pylint.MASTER]
 load-plugins = ["pylint_django", "pylint_celery"]
-django-settings-module = "backend.main.config.settings.local"
+django-settings-module = "backend.{{ cookiecutter.project_slug }}_project.config.settings.local"
 
 [tool.pylint.FORMAT]
 max-line-length = 119

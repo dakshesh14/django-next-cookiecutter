@@ -36,14 +36,14 @@ cd <project_slug>
 ```bash
 pnpm install
 pnpm prepare # for husky hooks
-cd backend/main && pip install -r requirements/local.txt # I recommend using a virtual environment
+cd backend/{{ cookiecutter.project_slug }}_project && pip install -r requirements/local.txt # I recommend using a virtual environment
 ```
 
 4. Start the development server:
 
 ```bash
 turbo dev
-cd backend/main && python manage.py runserver
+cd backend/{{ cookiecutter.project_slug }}_project && python manage.py runserver
 ```
 
 5. Open your browser and visit [http://localhost:3000](http://localhost:3000)
