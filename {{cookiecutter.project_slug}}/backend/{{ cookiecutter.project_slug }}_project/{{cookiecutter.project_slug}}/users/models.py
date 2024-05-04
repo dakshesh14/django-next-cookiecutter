@@ -7,7 +7,7 @@ from django.db import models
 
 class User(AbstractUser):
     """
-    Default custom user model for plutarchy.
+    Default custom user model for {{cookiecutter.project_slug}}.
     If adding fields that need to be filled at user signup,
     check forms.SignupForm and forms.SocialSignupForms accordingly.
     """
